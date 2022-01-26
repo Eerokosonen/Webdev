@@ -1,0 +1,84 @@
+:root {
+    --yellow: #ffd369;
+    --black: #222831;
+    --semiblack: #393e46;
+    --grey: #707070;
+    --semigrey: #b7b7b7;
+    --white: #eeeeee;
+}
+
+.white {
+    color: var(--white);
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {    
+    min-height: 100%;
+    margin: 0 auto ;
+}
+
+
+#navigation {    
+    background-color: var(--black);
+}
+
+#navigation > a{
+    color: var(--yellow);
+}
+
+.nav-link {
+    color: var(--yellow);
+}
+.yellow{
+    color: var(--yellow);
+}
+
+.nav-link:hover {
+    color: var(--semiblack);
+} 
+
+.active {
+    color: var(--white);
+} 
+
+.dropdown-menu .dropdown-item.active,.dropdown-menu .dropdown-item:hover {
+    background-color:var(--white);
+}
+
+.searchfield{
+    background-color: var(--semigrey);
+}
+
+.footer-container {
+    display: flex;    
+    flex-flow: row;
+    justify-content: center;
+    background-color: var(--black);
+    align-items: center;        
+    bottom: 0;
+    width: 100%;
+}
+
+.cfklogo{
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.footeritem {    
+    text-align: center;        
+    margin: auto;
+    color: var(--semigrey);
+    width: 25%;
+}
+
+@media (max-width:800px){
+	.footer-container { flex-flow: column; }
+    .footeritem {width: 100%;}
+    .footeritem { padding-bottom: 40px; }
+	
+}
